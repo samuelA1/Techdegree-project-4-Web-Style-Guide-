@@ -1,0 +1,28 @@
+a {
+  @extend %link;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  font-family: $font-primary;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1150px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  line-height: 1.9em;
+  font-size: 17px;
+}
+
+
+@if variable-exists(font-url--google) {
+	@import url($font-url--google);
+}

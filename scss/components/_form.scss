@@ -1,0 +1,21 @@
+.form {
+  @include m(label) {
+    @include e(hidden) {
+      @extend %hidden;
+      margin-bottom: 5px;
+    }
+  }
+  @include m(input) {
+    width: 100%;
+    border: none;
+    border-bottom: 8px solid $aquamarine;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+  @include mq(large) {
+    margin-top: 23px;
+  }
+}

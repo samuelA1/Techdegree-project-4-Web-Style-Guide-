@@ -1,0 +1,19 @@
+.img {
+  @include e(logo) {
+    @extend %img-cntr;
+    @include mq(large) {
+      display: inline;
+      margin-right: auto;
+    }
+  }
+  @include e(avatar) {
+    @extend %img-cntr;
+    width: 30%;
+    padding: 15px 0;
+  }
+  @include e(frame) {
+    @extend %img-cntr;
+    padding: 25px 0;
+    width: 85%;
+  }
+}

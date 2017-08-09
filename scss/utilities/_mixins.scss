@@ -1,0 +1,43 @@
+//Map mixin
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}
+
+//BEM selectors
+@mixin e($element) {
+  &--#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &__#{$modifier} {
+    @content;
+  }
+}
+
+// flexbox
+@mixin flex {
+  display: flex;
+}
+
+//media query mixin
+@mixin mq($break) {
+  @if $break == "small" {
+    @media #{$br-narrow} {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media #{$br-wide} {
+      @content;
+    }
+  }
+  @else {
+    @error "No value could be retrieved for #{$break}"
+  }
+}

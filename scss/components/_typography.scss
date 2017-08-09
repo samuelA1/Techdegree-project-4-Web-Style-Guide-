@@ -1,0 +1,29 @@
+.headline {
+  @include e(secondary) {
+    @extend %hdln-primary;
+  }
+  @include  e(primary) {
+    @extend %hdln-secondary;
+    color: $aquamarine;
+  }
+}
+
+p {
+  a {
+    color: $deepskyblue;
+  }
+}
+
+.blockquote {
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-left: 13px solid $aquamarine;
+  padding-left: 10px;
+  border-radius: 6px;
+}
+ .card {
+   @include mq(large) {
+     width: 60%;
+   }
+ }

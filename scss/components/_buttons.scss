@@ -1,0 +1,17 @@
+.btn {
+   @include bg-colors($ui-color);
+}
+button[type=submit] {
+  @extend %btn;
+  margin-top: 10px;
+}
+
+[class^="btn--"] {
+  @extend %btn;
+  margin-bottom: 30px;
+  @include mq(large) {
+    display: inline-block;
+    width: 15%;
+    margin-right: 50px;
+  }
+}

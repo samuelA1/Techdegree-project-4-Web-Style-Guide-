@@ -1,0 +1,61 @@
+
+// colors
+$white : #fff;
+$aquamarine : #7FFFD4;
+$deepskyblue : #00BFFF;
+$black : #000;
+
+//button colors
+$seagreen : #3CB371;
+$salmon : #FFA07A;
+$coral : #F08080;
+$mediumpurple: #9370DB;
+
+//grid colors
+$springreen : #00FA9A;
+$slatepurple : #7B68EE;
+$wood : #DEB887;
+$orchid : #DA70D6;
+$lightgreen : #90EE90;
+$siena : #A0522D;
+$teal : #008080;
+$tan : #D2B48C;
+$lightsalmon : #FFA07A;
+
+// map colors
+$ui-color : (
+ default  : $deepskyblue,
+ success  : $seagreen,
+ error    : $coral,
+ warning  : $salmon,
+ info     : $mediumpurple,
+);
+ // grid
+ $g-count : 12;
+
+ //weigth
+ $l-bold : 400;
+
+ //radius
+ $br-round : 6px;
+
+ //grid map
+ $grid-color : (
+  12 : $springreen,
+  6  : $slatepurple,
+  4  : $wood,
+  3  : $orchid,
+  5  : $lightgreen,
+  7  :  $siena,
+  8  : $teal,
+ );
+ //list
+ $list: ($springreen, $slatepurple, $wood, $orchid, $lightgreen, $siena, $teal, $lightsalmon);
+
+//breakpoints
+$br-narrow : '(max-width: 480px)';
+$br-wide : '(min-width: 1400px)';
+
+//fonts
+$font-primary : 'Raleway', sans-serif;
+$font-url--google : 'https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,800,900';

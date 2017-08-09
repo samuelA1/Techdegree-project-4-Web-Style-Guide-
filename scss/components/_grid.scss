@@ -1,0 +1,42 @@
+@for $i from 2 through $g-count {
+  .grid__col--#{$i} {
+    margin: 3em 0;
+    border-radius: $br-round;
+    @include mq(large) {
+      margin: 1em 0;
+    }
+    }
+}
+
+@each $num, $color in $grid-color {
+  .grid__col--#{$num}.theme__colors {
+    background-color: $color;
+    color: $white;
+    @extend .centered;
+    font-weight: $l-bold;
+    padding: 12px 0;
+    @include mq(large) {
+      padding: 6px 0;
+      width: 100%;
+      margin-left: 3em;
+    }
+  }
+}
+
+.grid__col--4.theme__colors,
+.grid__col--5.theme__colors {
+  @include mq (large) {
+    width: 50%;
+    }
+}
+
+.grid__col--7.theme__colors {
+  @include mq(large) {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+}
+.grid__col--5.theme__colors {
+  margin-right: 3em;
+}

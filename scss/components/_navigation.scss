@@ -1,0 +1,28 @@
+
+.nav {
+  display: block;
+  text-align: center;
+  @include m(item) {
+    @extend %nav-item;
+    }
+  a:hover {
+    background-color: $aquamarine;
+    padding: 6px 15px;
+    border-radius: $br-round;
+    color: white;
+    font-weight: $l-bold;
+  }
+  @include mq(large) {
+    @include flex;
+    li {
+      margin-left: 3em;
+    }
+  }
+}
+
+.grid__row {
+  @include mq(large){
+    @include flex;
+    justify-content: space-between;
+  }
+}
