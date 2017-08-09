@@ -105,7 +105,8 @@ button[type=submit] {
     padding: 6px 15px;
     border-radius: 6px;
     color: white;
-    font-weight: 400; }
+    font-weight: 400;
+    margin: -15px; }
   @media (min-width: 1400px) {
     .nav {
       display: flex; }

@@ -11,6 +11,7 @@
     border-radius: $br-round;
     color: white;
     font-weight: $l-bold;
+    margin: -15px;
   }
   @include mq(large) {
     @include flex;
